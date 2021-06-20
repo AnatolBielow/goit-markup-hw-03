@@ -74,6 +74,7 @@ a {
     font-weight: 700;
     margin-bottom: 20px;
     letter-spacing: 0.03em;
+    border: solid 1px red;
 }
 .web {
     color: var(--pretty-color);   
