@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/styles.css">
@@ -15,27 +16,21 @@
                 <div class="logo">
                     <a href="#" class="web">Web<span class="studio1">Studio</span></a>
                 </div>                      
-                    <ul>
-                        <li>
-                            <div>
-                                <nav class="navigation">
-                                    <ul class="nav-list">
-                                        <li class="link"><a href="./index.html" >Студия</a></li>
-                                        <li class="active"><a href="#">Портфолио</a></li>
-                                        <li class="link"><a href="#contacts">Контакты</a></li>
-                                    </ul>
-                                </nav>             
-                            </div> 
-                        </li>
-                                  
-                        <li>
-                            <div>
-                                <ul>
-                                    <li class="contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                                    <li class="contacts"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-                                </ul>                           
-                            </div>
-                        </li>                      
+                    <ul class="menu">
+                        <div>
+                            <nav class="nav">
+                            <li class="link"><a href="./index.html" >Студия</a></li>
+                            <li class="active"><a href="#">Портфолио</a></li>
+                            <li class="link"><a href="#contacts">Контакты</a></li>
+                        
+                            </nav>    
+                        </div>
+    
+                                
+                        <div class="contacts">   
+                            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </div>                                
                     </ul>           
             </div>     
         </header>
@@ -44,7 +39,7 @@
             <div class="container">
                 <h1 class="hero-portfolio">Portfolio</h1>
                 <div>             
-                    <ul>
+                    <ul class="bar-buttons">
                         <li><button type="button" class="all">Все</button></li>
                         <li><button type="button" class="filtr-web">Веб-сайты</button></li>
                         <li><button type="button" class="filtr-app">Приложения</button></li>
@@ -53,51 +48,69 @@
                     </ul>                   
                 </div>
                 <div>
-                    <ul>
+                    <ul class="project-list">
                         <li>
-                            <img src="./images/techno.jpg" alt="Технокряк" width="370">
-                            <h2 class="project-title">Технокряк</h2>
-                            <p>Веб-сайт</p>
+                            <div class="website">
+                                <img src="./images/techno.jpg" alt="Технокряк" width="370">
+                                <h2 class="project-title">Технокряк</h2>
+                                <p>Веб-сайт</p>   
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/neworlean.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                            <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                            <p>Дизайн</p>
+                            <div class="design">
+                                <img src="./images/neworlean.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                                <p>Дизайн</p>                               
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
-                            <h2 class="project-title">Ресторан Seafood</h2>
-                            <p>Приложение</p>
+                            <div class="soft">
+                                <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
+                                <h2 class="project-title">Ресторан Seafood</h2>
+                                <p>Приложение</p>                                
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/prime.jpg" alt="Проект Prime" width="370">
-                            <h2 class="project-title">Проект Prime</h2>
-                            <p>Маркетинг</p>
+                            <div class="marketing">
+                                <img src="./images/prime.jpg" alt="Проект Prime" width="370">
+                                <h2 class="project-title">Проект Prime</h2>
+                                <p>Маркетинг</p>                                
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/boxes.jpg" alt="Проект Boxes" width="370">
-                            <h2 class="project-title">Проект Boxes</h2>
-                            <p>Приложение</p>
+                            <div class="soft">
+                                <img src="./images/boxes.jpg" alt="Проект Boxes" width="370">
+                                <h2 class="project-title">Проект Boxes</h2>
+                                <p>Приложение</p>                                
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="370">
-                            <h2 class="project-title">Inspiration has no Borders</h2>
-                            <p>Веб-сайт</p>
+                            <div class="website">
+                                <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="370">
+                                <h2 class="project-title">Inspiration has no Borders</h2>
+                                <p>Веб-сайт</p>                                
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/limited.jpg" alt="Издание Limited Edition" width="370">
-                            <h2 class="project-title">Издание Limited Edition</h2>
-                            <p>Дизайн</p>
+                            <div class="design">
+                                <img src="./images/limited.jpg" alt="Издание Limited Edition" width="370">
+                                <h2 class="project-title">Издание Limited Edition</h2>
+                                <p>Дизайн</p>                                
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/lab.jpg" alt="Проект LAB" width="370">
-                            <h2 class="project-title">Проект LAB</h2>
-                            <p>Маркетинг</p>
+                            <div class="marketing">
+                                <img src="./images/lab.jpg" alt="Проект LAB" width="370">
+                                <h2 class="project-title">Проект LAB</h2>
+                                <p>Маркетинг</p>                                
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/business.jpg" alt="Growing Business" width="370">
-                            <h2 class="project-title">Growing Business</h2>
-                            <p>Веб-сайт</p>
+                            <div class="website">
+                                <img src="./images/business.jpg" alt="Growing Business" width="370">
+                                <h2 class="project-title">Growing Business</h2>
+                                <p>Веб-сайт</p>                                
+                            </div>
                         </li>
                     </ul>
                 </div>
