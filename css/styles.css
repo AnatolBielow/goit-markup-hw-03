@@ -129,6 +129,7 @@ img {
  .contacts {
      display: flex;
     margin-right: 0;
+    color: var(--text-color);
  }  
 .contacts li {
     margin-left: 50px;
