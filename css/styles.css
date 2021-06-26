@@ -54,6 +54,7 @@ ul {
 
 } 
 a {
+    display: inline-block;
     color: inherit;
     text-decoration: none;
 }
@@ -65,12 +66,13 @@ img {
 
 .container {
     width: 1200px;
-    /* padding: 15px; */
+    padding: 0 15px; 
 
 }
-section {
-    width: 1600px;
-    padding: 94px 215px;
+.section {
+  
+    padding-top: 94px;
+    padding-bottom: 94px;
  }
  /* section .container {
     padding-top: 94px;
@@ -80,7 +82,7 @@ section {
 
 /*-------Header Section---------*/
 .header {
-    width: 1600px;
+    box-sizing: border-box;
     background-color: var(--while-color);
     color: var(--header-color);
     font-weight: 500;
@@ -91,7 +93,8 @@ section {
 
 /*---Logo---*/
 .logo {
-    
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin-left: 0;
     margin-right: 40px;
     font-family: var(--logo-font);
@@ -117,23 +120,26 @@ section {
     align-items: center;
 } 
 
- .menu {
-    
-     display: contents;
- } 
- .menu div {
-     margin-left: 0;
- }
- .nav { 
+ .menu {   
     display: flex;
- }
-  
- .nav li {
-     display: flex;
-     margin-left: 50px;
- }
+ } 
+.menu a {
+    padding: 32px 0;
+}
+ 
+.nav { 
+display: flex;
+margin-left: 0;
+margin-right: auto;
+}
 
- .contacts {
+.nav li {
+    display: flex;
+    margin-left: 50px;
+
+}
+
+.contacts {
      display: flex;
     margin-right: 0;
     color: var(--text-color);
@@ -141,7 +147,9 @@ section {
 .contacts li {
     margin-left: 50px;
 }
-
+ .contacts a {
+    padding: 32px 0;
+ } 
 
 .nav a:hover,
 .nav a:focus,
@@ -284,7 +292,7 @@ section {
 
 /*------Footer Section-------*/   
 .footer {
-    width: 1600px;
+    /* width: 1600px; */
     background-color: var(--footer-color);
     box-sizing: border-box;
     color:var(--while-color);
@@ -352,8 +360,7 @@ button:hover {
 
 /* ----------Projects----------- */
 .portfolio {
-    padding: 0;
-    margin: 0;
+
     font-size: 16px;
     color: var(--text-color);
     line-height: 1.875;
